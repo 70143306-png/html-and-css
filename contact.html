@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Rental App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+
+<!-- Navbar -->
+<nav class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-xl font-bold text-blue-600">RentalApp</a>
+    <div class="space-x-4">
+      <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="about.html" class="text-gray-700 hover:text-blue-600">About</a>
+      <a href="contact.html" class="text-blue-600 font-semibold">Contact</a>
+      <a href="signin.html" class="text-gray-700 hover:text-blue-600">Sign In</a>
+      <a href="signup.html" class="text-gray-700 hover:text-blue-600">Sign Up</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Section -->
+<section class="py-12 max-w-7xl mx-auto px-4">
+  <h2 class="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <!-- Contact Info -->
+    <div class="space-y-4">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">Email</h3>
+        <p>info@rentalapp.com</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">Phone</h3>
+        <p>+92 300 1234567</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold text-xl mb-2">Address</h3>
+        <p>123 Main Street, Karachi, Pakistan</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="bg-white p-6 rounded shadow">
+     <form action="https://formspree.io/f/xanlegja" method="POST" class="space-y-4">
+
+        <!-- Optional: disable captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Redirect to thank you page -->
+        <input type="hidden" name="_next" value="thankyou.html">
+
+        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <input type="text" name="subject" placeholder="Subject" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <textarea name="message" placeholder="Your Message" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white py-6 mt-12 shadow-inner">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+    <p class="text-gray-600">&copy; 2025 RentalApp. All rights reserved.</p>
+    <div class="space-x-4">
+      <a href="#" class="text-gray-600 hover:text-blue-600">Facebook</a>
+      <a href="#" class="text-gray-600 hover:text-blue-600">Twitter</a>
+      <a href="#" class="text-gray-600 hover:text-blue-600">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+</body>
+</html>
